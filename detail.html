@@ -1,0 +1,137 @@
+<!DOCTYPE html>  
+<html lang="vi">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Chi Tiết Phim</title>  
+    <link rel="stylesheet" href="./css/main.css">  
+</head>  
+<body>  
+    <header>  
+        <h1>Chi Tiết Phim</h1>  
+        <a href="index.html">Trở về</a>  
+    </header>  
+    <main id="movie-detail"></main>  
+    
+
+
+
+<script>
+    const movies = [  
+    {  
+        title: "1. Monster Hunter – Thợ săn quái vật ", 
+        year: 2020,  
+        img: "https://cdn.popsww.com/blog/sites/2/2021/06/phim-2020-gay-can.jpg",  
+        summary: "Monster Hunter được lấy ý tưởng từ trò chơi cùng tên vô cùng nổi tiếng của Capcom. Bộ phim kể về một thế giới song song với Trái Đất, khi mà con người phải sống cùng với những loài quái vật nguy hiểm với sức mạnh hủy diệt đáng sợ. Ngay sau khi trung úy Artemis cùng đội của cô bị chuyển đến thế giới mới này, họ lập tức bị lôi vào các cuộc chiến sinh tồn với những loài quái vật to lớn, đáng sợ. Những cuộc chiến không khoan nhượng, những thử thách nguy hiểm trong xuyên suốt thời gian của phim chắc chắn sẽ khiến bạn không thể rời mắt đấy.",  
+        img2:"https://tintuc-divineshop.cdn.vccloud.vn/wp-content/uploads/2022/03/review-phim-monster-hunter-tho-san-quai-vat_623801628c852.jpeg",
+        director: "Đạo diễn: Paul W. S. Anderson",  
+        cast: " Milla Jovovich,Tony Jaa,Tip “T. I.” Harris", 
+        img3:"https://img-cdn.2game.vn/2022/08/19/ThoSanQuaiVat-P2-6.jpg",
+        trailer: "https://www.youtube.com/watch?v=puQyZsaTtqY" ,
+        fullMovie: "https://ww1.vietsub.biz/xem-monster-hunter-tho-san-quai-vat/full-sv1.html"  
+    },  
+    {  
+        title: "2. Hành tinh cát – Dune",  
+        year: 2021,  
+        img: "https://m.yodycdn.com/blog/phim-chieu-rap-2021-1-jpeg.jpg",  
+        summary: "Dune (2021) là một bộ phim khoa học viễn tưởng dựa trên tiểu thuyết cùng tên của Frank Herbert. Câu chuyện xoay quanh Paul Atreides, một thanh niên tài năng thuộc gia tộc Atreides, người được giao nhiệm vụ bảo vệ hành tinh sa mạc Arrakis. Đây là nguồn duy nhất cung cấp spice, một chất quý giá giúp mở rộng trí tuệ và du hành vũ trụ. Khi gia tộc Atreides bị phản bội bởi nhà Harkonnen, Paul cùng mẹ phải chạy trốn và tìm sự giúp đỡ từ người Fremen, dân bản địa của hành tinh này. Trong hành trình, Paul khám phá định mệnh của mình với tư cách là Người được chọn và vai trò trong việc giải phóng Arrakis. Phim gây ấn tượng với hình ảnh hoành tráng, âm nhạc cuốn hút, và dàn diễn viên xuất sắc như Timothée Chalamet, Rebecca Ferguson, và Oscar Isaac.",  
+        img2:"https://photo.znews.vn/w660/Uploaded/mdf_uswreo/2024_03_05/dune_2020_movie_3fc20ad_scaled.jpg",
+        director: "Đạo diễn: Denis Villeneuve",  
+        cast: "Timotheé Chalamet, Zendaya, Josh Brolin, Rebecca Ferguson, Dave Bautista, ... ",  
+        img3:"https://www.galaxycine.vn/media/2024/3/5/review-dune-2-600-4_1709613348480.jpg",
+        trailer:"https://www.youtube.com/watch?v=R797Sf-2zt0",
+        fullMovie: "https://yeuphim.vip/phim/hanh-tinh-cat/tap-full-87781"  
+    },  
+    {  
+        title: "3. Black Panther: Wakanda Forever",  
+        year: 2022,  
+        img: "https://static-images.vnncdn.net/files/publish/2022/11/9/bpwfr-003b-g-vie-vn-70x100-122.jpg",  
+        summary: "Black Panther Wakanda Forever (2022) là phần tiếp theo của Black Panther, lấy bối cảnh sau cái chết của T'Challa. Wakanda phải đối mặt với các mối đe dọa từ các thế lực bên ngoài khi thế giới tìm cách chiếm đoạt vibranium. Trong lúc đó, Namor, vua của vương quốc biển Talokan, xuất hiện với lời cảnh báo và đề nghị liên minh chống lại các quốc gia bên ngoài. Shuri, em gái của T'Challa, trải qua hành trình đối mặt với nỗi đau mất mát và nhận trọng trách mới. Cuối cùng, cô chế tạo được Thảo Dược Hình Tim, trở thành Black Panther mới và lãnh đạo Wakanda chiến đấu để bảo vệ quốc gia, đồng thời tìm cách duy trì hòa bình với Talokan. Phim tôn vinh di sản của T'Challa và khám phá chủ đề về sự mất mát, đoàn kết, và trách nhiệm.",  
+        img2:"https://forbes.vn/wp-content/uploads/2023/02/0x0-2023-02-08T090951.571.jpg",
+        director: " Ryan Coogler",  
+        cast: "Letitia Wright, Lupita Nyong’o, Danai Gurira, Winston Duke, Angela Bassett, Tenoch Huerta, Dominique Thorne, Michaela Coel, Martin Freeman, Julia Louis- Dreyfus ",
+        img3:"https://thanhnien.mediacdn.vn/Uploaded/dotuan/2022_11_07/1-316.jpg",
+        trailer: "https://www.youtube.com/watch?v=_Z3QKkl1WyM",  
+        fullMovie: "https://touchcinema.com/phim/chien-binh-bao-den-2-wakanda-bat-diet"  
+    },  
+    {  
+        title: "Phim 4",  
+        year: 2023,  
+        img: "https://via.placeholder.com/150",  
+        summary: "Tóm tắt phim 4.",  
+        director: "Đạo diễn 4",  
+        cast: "Diễn viên 7, Diễn viên 8",  
+        trailer: "https://www.youtube.com/watch?v=trailer4",  
+        fullMovie: "https://link_to_full_movie_4.com"  
+    },  
+    {  
+        title: "Phim 5",  
+        year: 2021,  
+        img: "https://via.placeholder.com/150",  
+        summary: "Tóm tắt phim 5.",  
+        director: "Đạo diễn 5",  
+        cast: "Diễn viên 9, Diễn viên 10",  
+        trailer: "https://www.youtube.com/watch?v=trailer5",  
+        fullMovie: "https://link_to_full_movie_5.com"  
+    },  
+    {  
+        title: "Phim 6",  
+        year: 2022,  
+        img: "https://via.placeholder.com/150",  
+        summary: "Tóm tắt phim 6.",  
+        director: "Đạo diễn 6",  
+        cast: "Diễn viên 11, Diễn viên 12",  
+        trailer: "https://www.youtube.com/watch?v=trailer6",  
+        fullMovie: "https://link_to_full_movie_6.com"  
+    },  
+    {  
+        title: "Phim 7",  
+        year: 2023,  
+        img: "https://via.placeholder.com/150",  
+        summary: "Tóm tắt phim 7.",  
+        director: "Đạo diễn 7",  
+        cast: "Diễn viên 13, Diễn viên 14",  
+        trailer: "https://www.youtube.com/watch?v=trailer7",  
+        fullMovie: "https://link_to_full_movie_7.com"  
+    },  
+    {  
+        title: "Phim 8",  
+        year: 2020,  
+        img: "https://via.placeholder.com/150",  
+        summary: "Tóm tắt phim 8.",  
+        director: "Đạo diễn 8",  
+        cast: "Diễn viên 15, Diễn viên 16",  
+        trailer: "https://www.youtube.com/watch?v=trailer8",  
+        fullMovie: "https://link_to_full_movie_8.com"  
+    },  
+];  
+
+function getMovieDetails() {  
+    const params = new URLSearchParams(window.location.search);  
+    const title = params.get('title');  
+    const movie = movies.find(m => m.title === decodeURIComponent(title));  
+
+    if (movie) {  
+        const movieDetail = document.getElementById("movie-detail");  
+        movieDetail.innerHTML = `  
+            <img src="${movie.img}" alt="${movie.title}">  
+            <h2>${movie.title}</h2>  
+            <p>Năm: ${movie.year}</p>  
+            <p>Tóm tắt: ${movie.summary}</p>  
+            <img src="${movie.img2}" alt="${movie.title}"> 
+            <p>Đạo diễn: ${movie.director}</p>  
+            <p>Diễn viên: ${movie.cast}</p>  
+            <img src="${movie.img3}" alt="${movie.title}"> 
+            <p><a href="${movie.trailer}" target="_blank">Xem trailer</a></p>  
+            <p><a href="${movie.fullMovie}" target="_blank">Xem phim đầy đủ</a></p>  
+        `;  
+    } else {  
+        document.getElementById("movie-detail").innerHTML = "<p>Không tìm thấy thông tin phim.</p>";  
+    }  
+}  
+
+document.addEventListener("DOMContentLoaded", getMovieDetails);
+</script>
+
+</body>  
+</html>
