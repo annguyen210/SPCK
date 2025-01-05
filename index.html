@@ -13,10 +13,45 @@
         <input type="text" id="search" placeholder="Tìm kiếm phim..." />  
     </header>  
     <main id="movie-list"></main>  
+    
+
     <footer>  
-        <a href="contact.html">Liên hệ</a>  
+         <a href="contact.html">Liên hệ </a>  
+         <main>
+            <div id="user-info"></div>  
+            <button id="logout-button">Đăng xuất</button>  
+        </main>
     </footer>  
+   
     <script src="./js/script.js"></script>  
+
+   
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {  
+    const username = localStorage.getItem("username");  
+    const password = localStorage.getItem("password");  
+
+    const userInfoDiv = document.getElementById("user-info");  
+
+    if (username) {  
+        userInfoDiv.innerHTML = `  
+            <p>Chào mừng: <strong>${username}</strong></p>  
+            <p>Mật khẩu của bạn là: <strong>${password}</strong></p>  
+        `;  
+    } else {  
+        userInfoDiv.innerHTML = "<p>Vui lòng đăng nhập để truy cập trang này.</p>";  
+        window.location.href = "login.html"; // Nếu không đăng nhập, chuyển hướng về trang đăng nhập  
+    }  
+
+    document.getElementById("logout-button").addEventListener("click", function () {  
+        // Xóa thông tin người dùng  
+        localStorage.removeItem("username");  
+        localStorage.removeItem("password");  
+        // Chuyển hướng về trang đăng ký  
+        window.location.href = "register.html";  
+    });  
+});
+    </script>
 </body>  
 </html>
 

@@ -18,9 +18,9 @@ const movies = [
        
     },  
     {  
-        title: "Tà Chú Cấm",  
+        title: "4. Tà Chú Cấm - Thái Lan",  
         year: 2023,  
-        img: "https://i.ytimg.com/vi/69RtpDcCEFA/hqdefault.jpg",   
+        img: "https://s1.dmcdn.net/v/Wl7q81d5-Grhbo2l0/x1080",   
     },  
     {  
         title: "Spider-Man: No Way Home",  
