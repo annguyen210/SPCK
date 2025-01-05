@@ -18,29 +18,29 @@ const movies = [
        
     },  
     {  
-        title: "Phim 4",  
+        title: "Tà Chú Cấm",  
         year: 2023,  
-        img: "https://via.placeholder.com/150",   
+        img: "https://i.ytimg.com/vi/69RtpDcCEFA/hqdefault.jpg",   
     },  
     {  
-        title: "Phim 5",  
+        title: "Spider-Man: No Way Home",  
         year: 2021,  
-        img: "https://via.placeholder.com/150",  
+        img: "https://m.yodycdn.com/blog/phim-chieu-rap-2021-3.jpg",  
     },  
     {  
-        title: "Phim 6",  
-        year: 2022,  
-        img: "https://via.placeholder.com/150",  
-    },  
-    {  
-        title: "Phim 7",  
+        title: "John Wick: Chapter 4",  
         year: 2023,  
-        img: "https://via.placeholder.com/150",  
+        img: "https://i.ytimg.com/vi/qEVUtrk8_B4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBC_Qhq_jvQw3WIDhe33XNgQu48Fg",  
     },  
     {  
-        title: "Phim 8",  
+        title: "Top Gun: Maverick",  
+        year: 2022,  
+        img: "https://gamek.mediacdn.vn/133514250583805952/2022/5/19/photo-1-16529313524351305865351.jpg",  
+    },  
+    {  
+        title: "The Invisible Man: Kẻ Vô Hình",  
         year: 2020,  
-        img: "https://via.placeholder.com/150",  
+        img: "https://image.voh.com.vn/voh/Image/2022/03/14/2-The-Invisible-Man.jpg?t=o&w=768&q=85",  
     },  
 ];  
 
