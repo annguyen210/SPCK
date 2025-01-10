@@ -36,7 +36,8 @@ label {
 }  
 
 input[type="text"],  
-input[type="password"] {  
+input[type="password"],
+input[type="email"] {  
     padding: 10px;  
     border: 1px solid #ccc;  
     border-radius: 4px;  
@@ -56,6 +57,10 @@ button {
 button:hover {  
     background: #4cae4c;  
 }  
+.change-link {
+    text-align: center;
+    margin-top: 10px;
+}
 
 footer {  
     text-align: center;  
