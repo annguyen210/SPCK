@@ -1,3 +1,6 @@
+
+
+// bat su kien cho button login
 document.getElementById("login-form").addEventListener("submit", function(event) {  
     event.preventDefault(); // Ngăn không cho form tự động gửi  
 
@@ -11,7 +14,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     // Kiểm tra thông tin đăng nhập  
     if (username === storedUsername && password === storedPassword) {  
         // Nếu đúng, chuyển hướng đến trang index.html  
-        window.location.href = "index.html";  
+        window.location.href = "../index.html";  
     } else {  
         alert("Tài khoản hoặc mật khẩu không đúng!");  
     }  
