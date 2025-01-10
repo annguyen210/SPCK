@@ -45,10 +45,16 @@ function showDetails(id) {
 
 document.getElementById("search").addEventListener("input", function () {
   const query = this.value.toLowerCase();
-  const filteredMovies = movies.filter((movie) =>
-    movie.title.toLowerCase().includes(query)
-  );
-  displayMovies(filteredMovies);
+  // lay danh sach cac card movie tu html (neu khong chua ki tu search => an)
+  const movie_cards = document.querySelectorAll(".movie");
+  movie_cards.forEach((card) => {
+    const title = card.querySelector("h2").innerText.toLowerCase();
+    if (title.includes(query)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
 });
 
 // Hiển thị tất cả phim ban đầu
