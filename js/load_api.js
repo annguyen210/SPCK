@@ -40,7 +40,7 @@ function displayMovies() {
 }
 
 function showDetails(id) {
-  window.location.href = `../html/detail.html?id=${id}`;
+  window.location.href = `./html/detail.html?id=${id}`;
 }
 
 document.getElementById("search").addEventListener("input", function () {
